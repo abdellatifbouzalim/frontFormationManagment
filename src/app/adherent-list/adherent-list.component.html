@@ -1,0 +1,34 @@
+<h1 class="page-title">Adherents List</h1>
+<button class="btn btn-primary" (click)="addAdherent()">Add adherent</button>
+<table class="table table-striped adherent-table">
+  <thead>
+    <tr>
+        <th></th>
+      <th>ID</th>
+      <th>Prénom</th>
+      <th>Nom</th>
+      <th>Actions</th>
+      <!-- Autres colonnes à afficher si nécessaire -->
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let adherent of adherents" class="adherent-row">
+        <td> <img src="https://cdn.icon-icons.com/icons2/2645/PNG/512/person_circle_icon_159926.png" alt=""></td>
+      <td class="bold-text">{{ adherent.id }}</td>
+      <td>{{ adherent.firstName }}</td>
+      <td>{{ adherent.lastName }}</td>
+      <td>
+        <button (click)="editAdherent(adherent.id)" class="btn btn-primary">Update</button>
+        <button (click)="deleteAdherentFromFormation(formationId,adherent.id)" class="btn btn-danger">Delete</button>
+        
+
+      </td>
+      <!-- Autres cellules à afficher si nécessaire -->
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="adherents.length === 0" class="alert-empty-table" role="alert">
+  <h5>Aucun adhérent associé à cette formation.</h5>
+</div>

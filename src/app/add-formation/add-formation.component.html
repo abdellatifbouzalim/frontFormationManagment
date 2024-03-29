@@ -1,0 +1,27 @@
+<h1 class="page-title">Add Formations</h1>
+<form (ngSubmit)="onSubmit()" class="form-container">
+  <div>
+    <label for="title" class="form-label">Title:</label>
+    <input type="text" id="title" name="title" [(ngModel)]="newFormation.title" required class="form-input">
+    <div *ngIf="formSubmitted && !newFormation.title" class="error-message">Title is required</div>
+  </div>
+  <div>
+    <label for="description" class="form-label">Description:</label>
+    <textarea id="description" name="description" [(ngModel)]="newFormation.description" required class="form-input"></textarea>
+    <div *ngIf="formSubmitted && !newFormation.description" class="error-message">Description is required</div>
+  </div>
+  <div>
+    <label for="startDate" class="form-label">Start Date:</label>
+    <input type="date" id="startDate" name="startDate" [(ngModel)]="newFormation.startDate" required class="form-input">
+    <div *ngIf="formSubmitted && !newFormation.startDate" class="error-message">Start Date is required</div>
+  </div>
+  <div>
+    <label for="endDate" class="form-label">End Date:</label>
+    <input type="date" id="endDate" name="endDate" [(ngModel)]="newFormation.endDate" required class="form-input">
+    <div *ngIf="formSubmitted && !newFormation.endDate" class="error-message">End Date is required</div>
+  </div>
+  <button type="submit" class="form-submit">Add Formation</button>
+</form>
+
+
+

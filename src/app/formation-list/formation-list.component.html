@@ -1,0 +1,43 @@
+<h1 class="page-title">Formations List</h1>
+
+<div class="search-container">
+    <input type="text" [(ngModel)]="searchText" placeholder="Search formation by title..." class="search-input" (ngModelChange)="searchFormations()">
+</div>
+
+<table class="table table-striped formation-table" >
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Titre</th>
+        <th>Description</th>
+        <th>Date de début</th>
+        <th>Date de fin</th>
+        <th>Actions</th>
+      </tr>
+    </thead >
+
+    <tbody >
+        
+      <tr *ngFor="let formation of formations" class="formation-row" >
+        <td class="bold-text">{{ formation.id }}</td>
+        <td>{{ formation.title }}</td>
+        <td>{{ formation.description }}</td>
+        <td>{{ formation.startDate | date: 'dd/MM/yyyy' }}</td>
+        <td>{{ formation.endDate | date: 'dd/MM/yyyy' }}</td>
+        <td class="actions-column">
+          <button (click)="editFormation(formation.id)" class="btn btn-primary">Update</button>
+          <button (click)="deleteFormation(formation.id)" class="btn btn-danger">Delete</button>
+          <button (click)="showAdherents(formation.id)" class="btn btn-info">Show Adherents</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+      <span *ngIf="formations && formations.length > 0; else noData"></span>
+
+<ng-template #noData>
+  <div class="alert-empty-table" role="alert">
+
+        <h5 >No formation found with this name</h5>
+
+  </div>
+</ng-template>

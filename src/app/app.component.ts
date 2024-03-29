@@ -1,10 +1,18 @@
+import { CommonModule, NgForOf } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    HttpClientModule,
+    CommonModule,
+    NgForOf,
+    
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

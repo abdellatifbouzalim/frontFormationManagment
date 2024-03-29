@@ -1,0 +1,20 @@
+<h1 class="page-title">Edit Formations</h1>
+<form (submit)="updateFormation()" class="form-container">
+  <div>
+    <label for="title" class="form-label">Title:</label>
+    <input type="text" id="title" name="title" [(ngModel)]="formation.title" required class="form-input">
+  </div>
+  <div>
+    <label for="description" class="form-label">Description:</label>
+    <textarea id="description" name="description" [(ngModel)]="formation.description" required class="form-input"></textarea>
+  </div>
+  <div>
+    <label for="startDate" class="form-label">Start Date:</label>
+    <input type="date" id="startDate" name="startDate" [(ngModel)]="formation.startDate" required class="form-input">
+  </div>
+  <div>
+    <label for="endDate" class="form-label">End Date:</label>
+    <input type="date" id="endDate" name="endDate" [(ngModel)]="formation.endDate" required class="form-input">
+  </div>
+  <button type="submit" class="form-submit">Update Formation</button>
+</form>

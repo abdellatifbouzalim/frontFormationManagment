@@ -1,0 +1,179 @@
+/* Style pour la table des formations */
+.formation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .formation-table th, .formation-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .formation-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .formation-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style pour les cellules du tableau */
+  .formation-table td {
+    vertical-align: middle;
+  }
+  
+  /* Style pour les boutons d'action */
+  .edit-button, .delete-button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .edit-button:hover, .delete-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style pour les boutons dans la dernière colonne */
+  .actions-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style pour le message lorsque le tableau est vide */
+  .no-data-message {
+    font-style: italic;
+    color: #666;
+  }
+  
+/* Style pour le conteneur de recherche */
+.search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 100vh;
+    padding: 8px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style pour la table des formations */
+  .formation-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .formation-table th, .formation-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .formation-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Style pour les boutons d'action */
+  .edit-button, .delete-button {
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .edit-button:hover, .delete-button:hover {
+    background-color: #218838;
+  }
+  
+
+  .confirmation-alert {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .confirm-button, .cancel-button {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .confirm-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  
+  .cancel-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .confirm-button:hover, .cancel-button:hover {
+    opacity: 0.8;
+  }
+
+  /* styles.css (ou tout autre fichier CSS de votre projet) */
+
+.bold-text {
+    font-weight: bold;
+  }
+
+  .container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+  }
+  
+  .page-title {
+    text-align: center; 
+    font-size: 50px; 
+    margin: 20px; 
+  }  
+
+  /* formation-list.component.scss */
+
+.alert-empty-table {
+    background-color: #f8d7da; 
+    color: #721c24; 
+    padding: 0.75rem 1.25rem; 
+    border: 1px solid #f5c6cb; 
+    border-radius: 0.25rem; 
+    margin-bottom: 1rem; 
+    text-align: center;
+
+  }
+  
+  

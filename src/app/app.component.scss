@@ -1,0 +1,50 @@
+/* Style for the navigation menu */
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #318ef8;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    box-shadow: black;
+}
+
+/* Style for each menu item */
+.nav-item {
+    float: left;   padding-left: 20px;
+}
+
+/* Style for the links in the menu */
+.nav-link {
+ 
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; 
+    border-radius: 10px;
+}
+
+/* Hover effect for the links */
+.nav-link:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+/* Media queries pour le responsive design */
+@media only screen and (max-width: 768px) {
+    .nav-item {
+        float: none;
+        padding-left: 0px;
+    }
+    
+    .nav-link {
+        display: block;
+        text-align: left;
+        padding: 10px 10px;
+        border-bottom: 1px solid #ddd;
+    }
+}
